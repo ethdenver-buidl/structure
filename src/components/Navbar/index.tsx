@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Aragon SDK Demo</Navbar.Brand>
+        <Navbar.Brand href="#home">GovChat</Navbar.Brand>
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
         <div className="justify-content-end">
             <ConnectButton />

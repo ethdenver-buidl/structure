@@ -31,7 +31,7 @@ export default function DisplayProposals() {
       try {
         switch (step.key) {
           case VoteProposalStep.VOTING:
-            alert(`Voting... Review your transaction here: https://goerli.etherscan.io/tx/${step.txHash}`);
+            alert(`Voting... Review your transaction here: https://etherscan.io/tx/${step.txHash}`);
             break;
           case VoteProposalStep.DONE:
             alert(`Vote casted for proposal ${proposalId}!`);
