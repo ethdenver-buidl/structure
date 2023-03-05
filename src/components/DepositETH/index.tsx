@@ -17,7 +17,7 @@ export default function DepositETH(): JSX.Element {
     const depositParams: DepositParams = {
       type: TokenType.NATIVE,
       amount: BigInt(ETHToWei(amountOfETH)),
-      daoAddressOrEns: '0xff25e3d89995ea3b97cede27f00ec2281a89e960'
+      daoAddressOrEns: 'moonbasedao.eth'
     }
 
     const steps = client.methods.deposit(depositParams);
@@ -26,7 +26,7 @@ export default function DepositETH(): JSX.Element {
       try {
         switch(step.key) {
           case DaoDepositSteps.DEPOSITING:
-            alert(`Depositing ETH into DAO... here's your transaction: https://goerli.etherscan.io/tx/${step.txHash}`);
+            alert(`Depositing ETH into DAO... here's your transaction: https://etherscan.io/tx/${step.txHash}`);
             break;
           case DaoDepositSteps.DONE:
             alert(`Deposit of ${formatEther(amountOfETH)} ETH into DAO complete!`);
@@ -40,7 +40,7 @@ export default function DepositETH(): JSX.Element {
 
   return (
     <Container className="mx-auto row g-3" style={{ width: '800px' }}>
-      <h3 className="pt-4 text-center">Deposit ETH into ParksDAO</h3>
+      <h3 className="pt-4 text-center">Deposit ETH into MoonbaseDAO</h3>
 
       <input
         type="number"

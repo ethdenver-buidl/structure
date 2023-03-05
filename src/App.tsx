@@ -11,7 +11,7 @@ function App() {
     <>
       <NavBar />
       <Container className="text-center" style={{ paddingTop: '2%' }}>
-        <h1>ParksDAO🌳</h1>
+        <h1>GovChat</h1>
         <DepositETH />
         <MembersList />
         <DisplayProposals />

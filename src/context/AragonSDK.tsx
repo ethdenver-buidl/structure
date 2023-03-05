@@ -14,7 +14,7 @@ export function AragonSDKWrapper({ children }: any): JSX.Element {
       network: 'goerli',
       signer,
       daoFactoryAddress: '0x16B6c6674fEf5d29C9a49EA68A19944f5a8471D3',
-      web3Providers: ['https://rpc.ankr.com/eth_goerli'],
+      web3Providers: ['https://mainnet.infura.io/v3/c6df5b8662714701b780c8445480daeb'],
       ipfsNodes: [
         {
           url: 'https://testing-ipfs-0.aragon.network/api/v0',
