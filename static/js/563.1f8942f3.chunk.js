@@ -1,0 +1,1 @@
+(self.webpackChunkmoonbase_frontend=self.webpackChunkmoonbase_frontend||[]).push([[563],{36563:function(){}}]);
